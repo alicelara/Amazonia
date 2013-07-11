@@ -17,3 +17,18 @@ body{
   font-weight: 300;
   color: #4c4c4c;
 }
+form{
+	position: relative;
+	left: 150px;
+}
+.centralizando {
+	padding: 5px;
+	width: 600px;
+	margin: 0 auto;
+}
+.products{
+	background-color: #cecece;
+	padding: 15px;
+	width: 600px;
+	margin: 0 auto;
+}

@@ -1,7 +1,12 @@
+<div class="centralizando">
 <h1>Products - <%= @products.length %> products  </h1>
+<%= link_to "new product", "products/new" %>
+</div>
+<br>
 
 <div> 
 	<% @products.each do |product| %>
+	<div class="products">
 	<h3>Name</h3> 
 	<p><%= product[:name] %></p>
 	<h3>Description</h3>
@@ -10,5 +15,7 @@
 	<p> $ <%= product[:price_in_cents]/100.to_f %></p>
 
 	<%= link_to "show product", "products/#{product.id}" %>
+</div>
+<br>
 	<% end %>
 </div>
