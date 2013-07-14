@@ -3,7 +3,7 @@
 	<h3>Description</h3>
 	<p><%= @product[:description] %></p>
 	<h3>Price</h3>
-	<p> $ <%= @product[:price_in_cents]/100.to_f %></p>
+	<p> $ <%= @product.formatted_price %></p>
 </div>
 
 <div class="centralizando">

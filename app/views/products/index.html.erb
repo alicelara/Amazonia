@@ -1,6 +1,6 @@
 <div class="centralizando">
 <h1>Products - <%= @products.length %> products  </h1>
-<%= link_to "new product", "products/new" %>
+<%= link_to "new product", new_product_path %>
 </div>
 <br>
 
@@ -12,9 +12,9 @@
 	<h3>Description</h3>
 	<p> <%= product[:description]%></p>
 	<h3>Price</h3>
-	<p> $ <%= product[:price_in_cents]/100.to_f %></p>
+	<p> $ <%= product.formatted_price %></p>
 
-	<%= link_to "show product", "products/#{product.id}" %>
+	<%= link_to "show product", product_path(product.id) %>
 </div>
 <br>
 	<% end %>
